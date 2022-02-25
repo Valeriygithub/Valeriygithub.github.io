@@ -1,0 +1,15 @@
+.TextareaCard {
+	width: 333px;
+	height: 100px;
+	resize: none;
+	font-family: sans-serif;
+	font-size: 18px;
+	outline : none;
+	overflow : auto;
+	background: #F8F8F8;
+	border: none;
+	padding: 0;
+}
+.TextareaCard::-webkit-scrollbar {
+	overflow : auto;
+}

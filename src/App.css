@@ -1,0 +1,311 @@
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+	background-color: #F2F2F2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: noraml;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex: 2;
+}
+
+.wrapper-nav {
+	display: flex;
+	align-items: center;
+	flex: 3;
+	padding: 0 20px;
+}
+
+.nav-ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.nav-ul li {
+	margin: 0 50px;
+	padding: 20px 0;
+}
+
+.nav-ul-hiden {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*СARD*/
+.boxCardReceptRandom {
+	max-width: 390px;
+	min-height: 495px;
+	background-color: #F8F8F8;
+	margin: 0 auto;
+	margin-top: 207px;
+}
+
+.boxCardRecept {
+	max-width: 390px;
+	min-width: 390px;
+	min-height: 495px;
+	background-color: #F8F8F8;
+	margin-top: 131px;
+}
+
+.boxForCard {
+	display: 'flex';
+	flex-direction: 'column';
+	margin: 0 16.5px;
+}
+
+.imageRecept {
+	width: 100%;
+	height: 234px;
+}
+
+.nameFud {
+	margin-top: 35px;
+	margin-left: 28px;
+	margin-bottom: 26px;
+	text-align: left;
+	font-size: 24px;
+	padding-right: 20px;
+}
+
+.descriptionRecept {
+	margin-left: 30px;
+	margin-right: 16px;
+	text-align: left;
+	padding-bottom: 72px;
+}
+
+.btnSkip {
+	width: 195px;
+	height: 45px;
+	margin-right: 8px;
+	color: #000;
+	background-color: #C4C4C4;
+	border: none;
+	font-size: 18px;
+	padding: 0;
+	animation: bounce-top .9s both;
+	cursor: pointer;
+}
+
+.btnLike-active {
+	width: 195px;
+	height: 45px;
+	color: #000;
+	border: none;
+	font-size: 18px;
+	padding: 0;
+	background-color: red;
+	animation: bounce-top .9s both;
+	cursor: Not-allowed;
+
+}
+
+@keyframes bounce-top {
+	0% {
+		transform: translateY(-45px);
+		animation-timing-function: ease-in;
+		opacity: 1
+	}
+
+	24% {
+		opacity: 1
+	}
+
+	40% {
+		transform: translateY(-24px);
+		animation-timing-function: ease-in
+	}
+
+	65% {
+		transform: translateY(-12px);
+		animation-timing-function: ease-in
+	}
+
+	82% {
+		transform: translateY(-6px);
+		animation-timing-function: ease-in
+	}
+
+	93% {
+		transform: translateY(-4px);
+		animation-timing-function: ease-in
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		transform: translateY(0);
+		animation-timing-function: ease-out
+	}
+
+	100% {
+		transform: translateY(0);
+		animation-timing-function: ease-out;
+		opacity: 1
+	}
+}
+
+.btnLike {
+	width: 195px;
+	height: 45px;
+	color: #000;
+	border: none;
+	background-color: #C4C4C4;
+	font-size: 18px;
+	padding: 0;
+	cursor: pointer;
+}
+
+
+.btn-box {
+	display: flex;
+	max-width: 390px;
+	margin: 0 auto;
+	padding-top: 10px;
+	background-color: #fff;
+}
+
+.scroll {
+	max-width: 95%;
+	max-height: 100px;
+	overflow: auto;
+	margin-bottom: 72px;
+}
+
+.scroll::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+	background-color: #d1d1d1;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: #222;
+}
+
+.boxCards {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+}
+
+.wrapper-recept {
+	display: flex;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 102px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 274px;
+}
+
+/*MEDIA*/
+
+@media(max-width: 900px) {
+	.boxCardRecept {
+		margin-top: 61px;
+	}
+
+	.boxCardReceptRandom {
+		margin-top: 200px;
+	}
+
+}
+
+@media(max-width: 660px) {
+
+	nav,
+	.nav-ul {
+		flex-direction: column;
+	}
+
+	.btn_addRecept {
+		margin-bottom: 26px;
+	}
+
+	.nav-ul li {
+		padding: 0;
+		padding-bottom: 10px;
+	}
+
+	.boxCardReceptRandom {
+		margin: 200px auto;
+	}
+
+	.wrapper-recept {
+		width: 100%;
+		padding: 0;
+		margin-top: 50px;
+	}
+
+	.modal-body {
+		width: 95%;
+	}
+
+	.boxForCard {
+		margin: 0 5px;
+	}
+
+	.boxCardRecept {
+		min-width: 0;
+	}
+
+}
+
+@media(max-width: 540px) {
+	.boxCardRecept {
+		margin-top: 80px;
+	}
+
+}
+
+@media(max-width: 415px) {
+	.boxCardRecept {
+		margin-top: 55px;
+	}
+
+}
+
+@media(max-width: 390px) {
+
+	.boxCardReceptRandom {
+		margin: 100px 5px;
+	}
+
+	.boxCards {
+		margin-top: 80px;
+	}
+
+}
+
+@media(max-width: 375px) {
+
+	.boxCardReceptRandom {
+		margin: 100px 5px;
+	}
+
+}
