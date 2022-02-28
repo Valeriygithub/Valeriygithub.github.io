@@ -40,11 +40,11 @@ const MyGetPost = () => {
         return (
           <div className="boxCardReceptRandom" key={el.strMeal}>
             {el.strMealThumb != null ? (
-              <img className="imageRecept" src={el.strMealThumb} alt="img" />
+              <img className="imageRecept"  src={el.strMealThumb} alt="img" />
             ) : (
               <img
                 className="imageRecept"
-                src="/images/noimage.jpg"
+                src="/images/no_img.jpg"
                 alt="img"
               />
             )}

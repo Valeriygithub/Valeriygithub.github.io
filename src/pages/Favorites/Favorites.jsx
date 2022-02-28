@@ -13,6 +13,7 @@ const Favorites = () => {
       ) : (
         <h2 style={{ textAlign: "center",  marginTop: '100px' }}>Список рецептов пуст</h2>
       )}
+      
     </div>
   );
 };

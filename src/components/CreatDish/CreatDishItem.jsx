@@ -9,7 +9,7 @@ const CreatDishItem = (recept) => {
           {recept.recept.strMealThumb === null ? (
             <img
               className="imageRecept"
-              src="/images/noimage.jpg"
+              src="/images/no_img.jpg"
               width="100%"
               alt="img"
             />
@@ -20,7 +20,7 @@ const CreatDishItem = (recept) => {
               alt="img"
             />
           )}
-          <div>
+          <div style={{ paddingBottom:'1px'}}>
             <h2 className="nameFud">{recept.recept.strMeal}</h2>
             <div className="scroll">
               <p className="descriptionRecept">
